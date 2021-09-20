@@ -38,7 +38,7 @@ export default function Header(props) {
               to="/contact"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-black"
             >
-              Tin Tức
+              Liên Hệ
             </NavLink>
           </li>
           <li className="flex">
@@ -46,14 +46,14 @@ export default function Header(props) {
               to="/news"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-black"
             >
-              Ứng Dụng
+              Tin Tức
             </NavLink>
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 rounded">Sign in</button>
+          <button className="self-center px-8 py-3 rounded">Đăng Nhập</button>
           <button className="self-center px-8 py-3 font-semibold rounded bg-violet-600 text-coolGray-50">
-            Sign up
+            Đăng Ký
           </button>
         </div>
         <button className="p-4 lg:hidden">

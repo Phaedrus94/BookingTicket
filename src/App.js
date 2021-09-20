@@ -16,8 +16,8 @@ function App() {
         <HomeTemplate path="/home" exact Component={Home} />
         <HomeTemplate path="/contact" exact Component={Contact} />
         <HomeTemplate path="/news" exact Component={News} />
-        <Route path="/" exact Component={Register} />
-        <Route path="/" exact Component={Login} />
+        {/* <Route path="/" exact Component={Register} />
+        <Route path="/" exact Component={Login} /> */}
         <HomeTemplate path="/" exact Component={Home} />
       </Switch>
     </Router>

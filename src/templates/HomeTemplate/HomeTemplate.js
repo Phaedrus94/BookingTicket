@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Route } from "react-router";
+import Footer from "./Layouts/Footer/Footer";
 import Header from "./Layouts/Header/Header";
 import HomeCarousel from "./Layouts/HomeCarousel/HomeCarousel";
 
@@ -14,9 +15,8 @@ export const HomeTemplate = (props) => {
             <Header />
             <HomeCarousel />
             <Component {...propsRoute} />
-            <footer className="bg-black h-10 text-white">
-              Đây là footer template
-            </footer>
+
+            <Footer />
           </Fragment>
         );
       }}
