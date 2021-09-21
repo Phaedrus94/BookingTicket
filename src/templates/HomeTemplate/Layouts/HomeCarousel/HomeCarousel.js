@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Carousel } from "antd";
 import { useSelector, useDispatch } from "react-redux";
-
+import "./HomeCarousel.css";
 import { getCarouselAction } from "../../../../redux/actions/CarouselAction";
 const contentStyle = {
   height: "800px",
@@ -20,7 +20,7 @@ export default function HomeCarousel(props) {
   useEffect(() => {
     //1 action = {type:'',data}
     //2 phải cải middleware: callbackFunction(dispatcj)
-    const action = getCarouselAction;
+    const action = getCarouselAction();
     dispatch(action);
   }, []);
   const renderBanner = () => {
