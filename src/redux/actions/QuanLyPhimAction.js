@@ -6,7 +6,6 @@ export const getListFilmAction = () => {
     try {
       const result = await quanLyPhimService.layDanhSachPhim();
       //Đưa lên reducer
-      console.log("result", result);
 
       dispatch({
         type: SET_LIST_FILMS,

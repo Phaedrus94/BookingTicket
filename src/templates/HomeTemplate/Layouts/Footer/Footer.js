@@ -1,6 +1,14 @@
 import React from "react";
-
+import { useSelector } from "react-redux";
+import _ from "lodash";
 export default function Footer() {
+  const { arrCumRap } = useSelector((state) => state.QuanLyRapReducer);
+
+  const arrHeThongRap = _.map(arrCumRap, (heThongRap) => {
+    // console.log("arrHTR", heThongRap);
+    _.pick(heThongRap, ["maHeThongRap", "tenHeThongRap"]);
+  });
+  // console.log("arrHTR2", arrHeThongRap);
   return (
     <footer className="text-gray-600 body-font bg-gray-700">
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
