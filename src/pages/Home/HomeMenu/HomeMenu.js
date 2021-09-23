@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
-import { Tabs, Radio, Space } from "antd";
-import { quanLyPhimService } from "../../../services/QuanLyPhimService";
+import { Tabs } from "antd";
+
 import { NavLink } from "react-router-dom";
 import moment from "moment";
 const { TabPane } = Tabs;
@@ -9,13 +9,20 @@ export default function HomeMenu(props) {
   const changeTabPosition = (e) => {
     setState({ tabPosition: e.target.value });
   };
-  console.log("propsCumRap", props);
+
   const { tabPosition } = state;
   const renderCumRap = () => {
     return props.arrCumRap?.map((item, index) => {
       return (
         <TabPane
-          tab={<img src={item.logo} className="rounded-full" width="50" />}
+          tab={
+            <img
+              src={item.logo}
+              className="rounded-full"
+              width="50"
+              alt={item.logo}
+            />
+          }
           key={index}
         >
           <Tabs tabPosition={tabPosition}>
@@ -27,6 +34,7 @@ export default function HomeMenu(props) {
                       <img
                         src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png"
                         width="50"
+                        alt="logo"
                       />
                       <div className="text-left ml-2">{cumRap.tenCumRap}</div>
                     </div>

@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Button } from "@tsamantanis/react-glassmorphism";
 import { CustomCard } from "@tsamantanis/react-glassmorphism";
 import "@tsamantanis/react-glassmorphism/dist/index.css";
 import "../../assets/styles/circleRatting.css";
 import moment from "moment";
 import { Tabs } from "antd";
-
 import { getFilmDetail } from "../../redux/actions/QuanLyRapAction";
 import { NavLink } from "react-router-dom";
 const { TabPane } = Tabs;
@@ -94,10 +92,14 @@ export default function Detail(props) {
                                 className="mt-5"
                                 style={{ width: 50, height: 50 }}
                                 src="https://s3img.vcdn.vn/123phim/2018/10/cinestar-hai-ba-trung-15383833704033.jpg"
+                                alt="picCumRap"
                               />
                               <div>
-                                <p className="mt-4 ml-2 text-xl font-semibold	">
+                                <p className="mt-4 ml-2 text-xl font-semibold">
                                   {cumRap.tenCumRap}
+                                </p>
+                                <p className="text-gray-400 ml-2 -mt-5">
+                                  {cumRap.diaChi}
                                 </p>
                               </div>
                             </div>

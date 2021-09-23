@@ -33,6 +33,7 @@ export const QuanLyPhimReducer = (state = stateDefault, action) => {
     case SET_LIST_FILMS: {
       state.arrFilm = action.arrFilm;
       state.arrFilmDefault = state.arrFilm;
+
       return { ...state };
     }
     case SET_FILM_DANG_CHIEU: {

@@ -51,9 +51,22 @@ export default function Header(props) {
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 rounded">Đăng Nhập</button>
+          <button className="self-center px-8 py-3 rounded">
+            {" "}
+            <NavLink
+              to="/login"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-black"
+            >
+              Đăng Nhập
+            </NavLink>
+          </button>
           <button className="self-center px-8 py-3 font-semibold rounded bg-violet-600 text-coolGray-50">
-            Đăng Ký
+            <NavLink
+              to="/register"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-black"
+            >
+              Đăng Ký
+            </NavLink>
           </button>
         </div>
         <button className="p-4 lg:hidden">

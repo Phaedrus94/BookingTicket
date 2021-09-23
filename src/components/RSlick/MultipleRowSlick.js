@@ -61,7 +61,7 @@ const MultipleRowSlick = (props) => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div>
+    <div className="">
       <div>
         <button
           type="button"
